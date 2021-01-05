@@ -1,15 +1,16 @@
-Source: com.github.yourusername.yourrepositoryname
+Source: com.github.boyakhil978.helloworld
 Section: x11
-Priority: optional
-Maintainer: Cody Garver <cody@elementary.io>
-Build-Depends: cmake (>= 2.8),
-               debhelper (>= 9),
-               libgtk-3-dev,
-               valac (>= 0.40.0)
-Standards-Version: 3.9.3
+Priority: extra
+Maintainer: Your Name <boyakhil978@gmail.com>
+Build-Depends: debhelper (>= 10.5.1),
+               gettext,
+               libgtk-3-dev (>= 3.10),
+               meson,
+               valac (>= 0.28.0)
+Standards-Version: 4.1.1
 
-Package: com.github.yourusername.yourrepositoryname
+Package: com.github.boyakhil978.helloworld
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Hey young world
- This is a Hello World written in Vala using CMake build system.
+ This is a Hello World written in Vala using Meson build system.
